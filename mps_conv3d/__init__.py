@@ -31,7 +31,7 @@ def _load_library():
         _lib = load(
             name="mps_conv3d",
             sources=[os.path.join(src_dir, "conv3d_mps.mm")],
-            extra_cflags=["-std=c++17"],
+            extra_cflags=["-std=c++20"],
             extra_ldflags=["-framework", "Metal", "-framework", "Foundation"],
             verbose=False,
         )
