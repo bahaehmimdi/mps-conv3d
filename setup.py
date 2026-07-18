@@ -40,7 +40,7 @@ def get_extensions():
             name="mps_conv3d._C",
             sources=["mps_conv3d/csrc/conv3d_mps.mm"],
             include_dirs=torch_include,
-            extra_compile_args=["-std=c++17", "-O3", "-DTORCH_EXTENSION_NAME=_C"],
+            extra_compile_args=["-std=c++20", "-O3", "-DTORCH_EXTENSION_NAME=_C"],
             extra_link_args=[
                 "-framework", "Metal",
                 "-framework", "Foundation",
